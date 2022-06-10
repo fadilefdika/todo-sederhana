@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --bg-color: #575a5e;
+  --tittle-teks: #222823;
+  --bg-teks: rgb(222, 212, 194);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  align-items: center;
+}
+
+header {
+  margin: 20px;
+  width: 550px;
+}
+
+header h1 {
+  padding: 15px;
+  font-size: 3rem;
+  color: var(--tittle-teks);
+}
+header form #todo-text {
+  padding: 10px;
+  width: 430px;
+  border-radius: 15px;
+  border: none;
+  appearance: none;
+  outline: none;
+  font-size: 1.1rem;
+  background-color: var(--bg-teks);
+  color: #333;
+}
+header form #submit {
+  padding: 6px;
+  border: none;
+  outline: none;
+  appearance: none;
+  background: none;
+  color: var(--tittle-teks);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: var();
+  color: white;
+  border-radius: 15px;
+}
+
+main {
+  margin: 6px;
+}
+h2 {
+  font-size: 2rem;
+  padding: 15px;
+  width: 350px;
+  color: var(--tittle-teks);
+  margin-top: 2px;
+}
+
+.todo {
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px;
+}
+
+.todo li {
+  list-style: none;
+  width: 500px;
+  padding: 8px 10px;
+  margin: 7.5px;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-teks);
+  border-radius: 15px;
+  appearance: none;
+  outline: none;
+  color: #333;
+}
+
+.todo button {
+  padding: 6px;
+  margin-right: 5px;
+  border: none;
+  background: none;
+  color: var(--tittle-teks);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.todo button:hover {
+  cursor: pointer;
+  background-color: var(--tittle-teks);
+  color: white;
+  border-radius: 15px;
+}
+
+i {
+  font-size: 22px;
+  padding: 3px;
+}
+
+i:hover {
+  cursor: pointer;
+  background-color: var(--tittle-teks);
+  color: white;
+  border-radius: 15px;
+  background: none;
+  border-radius: none;
+  outline: none;
+}
+
+.complete {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.transisi {
+  transform: translateX(300px);
+  transition: 0.9s;
+  opacity: 0;
+}
